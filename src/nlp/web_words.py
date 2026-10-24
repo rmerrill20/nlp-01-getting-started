@@ -15,6 +15,7 @@ Analytical Questions
 Notes:
 - This example performs simple frequency analysis.
 - More advanced text processing techniques will be introduced later.
+- Ronni Merrill 2026-10
 
 Run from root project folder with:
 
