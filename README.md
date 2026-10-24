@@ -14,7 +14,7 @@
 
 ## Project Overview
 
-Author: Denise Case
+Author: Ronni Merrill
 
 Date: 2026 October
 
@@ -122,7 +122,7 @@ uv run python -m pytest
 
 ## Project Documentation
 
-The [hosted documentation site](https://denisecase.github.io/nlp-01-getting-started/)
+The [hosted documentation site](https://github.com/rmerrill20/nlp-01-getting-started)
 is published using Zensical and GitHub Pages.
 
 The documentation site is used to present the project report,
