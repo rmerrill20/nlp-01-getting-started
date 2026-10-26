@@ -1,6 +1,6 @@
 # Web Mining and Applied NLP Project Report
 
-Web Mining and Applied NLP | Project 01 | Example Report
+Web Mining and Applied NLP | Project 01 | Final Report
 
 ## Overview
 
@@ -25,12 +25,12 @@ The project uses:
 - Ruff, ty, and pytest for code verification.
 - Zensical and GitHub Pages for published documentation.
 
-The example script retrieves a Wikipedia article,
+The final script retrieves a Wikipedia article,
 extracts text, cleans words,
 and calculates token frequencies.
 
-The analysis produces a frequency bar chart
-and a word cloud.
+The analysis produces a horizontal frequency bar chart
+with color gradience and a word cloud.
 
 ## Verification
 
@@ -66,9 +66,9 @@ corpus exploration, and natural language processing.
 
 ## Project Links
 
-- [GitHub Repository](https://github.com/denisecase/nlp-01-getting-started)
-- [Example Script](https://github.com/denisecase/nlp-01-getting-started/blob/main/src/nlp/web_words.py)
-- [Example Notebook](https://github.com/denisecase/nlp-01-getting-started/blob/main/notebooks/web_words.ipynb)
+- [GitHub Repository](https://github.com/rmerrill20/nlp-01-getting-started)
+- [Final Script](https://github.com/rmerrill20/nlp-01-getting-started/blob/main/src/nlp/web_words.py)
+- [Example Notebook](https://github.com/rmerill20/nlp-01-getting-started/blob/main/notebooks/web_words.ipynb)
 
 ## Project Resources
 

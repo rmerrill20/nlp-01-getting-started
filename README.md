@@ -42,14 +42,14 @@ for analysis.
 
 No local input dataset is required.
 
-The example uses the Wikipedia article on
-[Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing).
+My final project uses the Wikipedia article on
+[Natural Language Processing](https://en.wikipedia.org/wiki/Horror_film).
 
 ## Approach
 
 The project uses Python to retrieve and analyze web text.
 
-The example demonstrates:
+The project demonstrates:
 
 - Retrieving HTML using HTTP requests.
 - Parsing HTML and extracting text with BeautifulSoup.
@@ -136,8 +136,8 @@ to check project files and publish the docs.
 
 GitHub Actions include:
 
-- [CI: Python and Documentation Checks](https://github.com/denisecase/nlp-01-getting-started/actions/workflows/ci-python-zensical.yml)
-- [CD: Documentation Deployment](https://github.com/denisecase/nlp-01-getting-started/actions/workflows/deploy-zensical.yml)
+- [CI: Python and Documentation Checks](https://github.com/rmerrill20/nlp-01-getting-started/actions/workflows/ci-python-zensical.yml)
+- [CD: Documentation Deployment](https://github.com/rmerrill20/nlp-01-getting-started/actions/workflows/deploy-zensical.yml)
 
 ## Developer Reference
 
