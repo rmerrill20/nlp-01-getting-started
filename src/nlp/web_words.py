@@ -175,7 +175,6 @@ print("Top 20 most frequent words:")
 print(freq_df.head(20))
 
 
-```python
 # ============================================================
 # Section 7. Build "Most Frequent Words" Horizontal Bar Chart
 # ============================================================
@@ -219,8 +218,15 @@ plt.ylabel("Word")
 
 # Improve spacing and display the chart.
 plt.tight_layout()
+
+# Save the bar chart as a PNG image.
+BAR_CHART_PATH: Path = ROOT_PATH / "docs" / "images" / "word_frequency.png"
+BAR_CHART_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+plt.savefig(BAR_CHART_PATH, dpi=300, bbox_inches="tight")
+print(f"Bar chart saved to: {BAR_CHART_PATH}")
+
 plt.show()
-```
 
 
 # ============================================================
@@ -254,6 +260,13 @@ plt.figure(figsize=(12, 6))
 plt.imshow(wc)
 plt.axis("off")
 plt.title("Word Cloud")
+
+# Save the word cloud as a PNG image.
+WORD_CLOUD_PATH: Path = ROOT_PATH / "docs" / "images" / "word_cloud.png"
+
+plt.savefig(WORD_CLOUD_PATH, dpi=300, bbox_inches="tight")
+print(f"Word cloud saved to: {WORD_CLOUD_PATH}")
+
 plt.show()
 
 # ============================================================
