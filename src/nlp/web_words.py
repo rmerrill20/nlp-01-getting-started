@@ -175,35 +175,52 @@ print("Top 20 most frequent words:")
 print(freq_df.head(20))
 
 
+```python
 # ============================================================
-# Section 7. Build "Most Frequent Words" Bar Chart
+# Section 7. Build "Most Frequent Words" Horizontal Bar Chart
 # ============================================================
 
-# Focus on the 10 most common words for a simple bar chart.
-# Use head(10) to get the top 10 rows of the frequency DataFrame.
-top_df: pl.DataFrame = freq_df.head(10)
+# Select the 15 most frequent words.
+top_df: pl.DataFrame = freq_df.head(15)
 
-# Make the figure size larger for better readability.
-# 10 inches wide by 5 inches tall is a common size for bar charts.
-plt.figure(figsize=(10, 5))
+# Reverse the rows so the most frequent word appears at the top.
+top_df = top_df.reverse()
 
-# Set the x-axis to the "word" column (the unique words).
-# Set the y-axis to the "len" column (the counts).
-plt.bar(top_df["word"], top_df["len"])
+# Create a horizontal bar chart.
+plt.figure(figsize=(10, 7))
 
-# Define ax as the current axes (gca = get current axes)
-# so we'll be able to modify tick parameters.
-ax = plt.gca()
+# Create a color gradient based on word frequency.
+# More frequent words receive darker colors.
+frequencies = top_df["len"].to_list()
+min_frequency = min(frequencies)
+max_frequency = max(frequencies)
 
-# Set the tick labels on the x-axis
-# to rotate 45 degrees for better readability,
-ax.tick_params(axis="x", labelrotation=45)
+if min_frequency == max_frequency:
+    normalized_frequencies = [0.5] * len(frequencies)
+else:
+    normalized_frequencies = [
+        (frequency - min_frequency) / (max_frequency - min_frequency)
+        for frequency in frequencies
+    ]
 
-plt.title("Most Frequent Words")
-plt.xlabel("Word")
-plt.ylabel("Frequency")
+colors = plt.cm.Blues(normalized_frequencies)
+
+# Draw the horizontal bars using the gradient colors.
+plt.barh(
+    top_df["word"],
+    top_df["len"],
+    color=colors,
+)
+
+# Add a descriptive title and axis labels.
+plt.title("Top 15 Most Frequent Words on a Horror Film Webpage")
+plt.xlabel("Frequency")
+plt.ylabel("Word")
+
+# Improve spacing and display the chart.
 plt.tight_layout()
 plt.show()
+```
 
 
 # ============================================================
