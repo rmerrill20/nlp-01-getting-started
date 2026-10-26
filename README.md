@@ -43,7 +43,7 @@ for analysis.
 No local input dataset is required.
 
 My final project uses the Wikipedia article on
-[Natural Language Processing](https://en.wikipedia.org/wiki/Horror_film).
+[Horror Films](https://en.wikipedia.org/wiki/Horror_film).
 
 ## Approach
 
